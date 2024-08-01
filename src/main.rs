@@ -9,9 +9,6 @@ fn main() {
     // Collect command-line arguments
     let args: Vec<_> = env::args().collect();
 
-    // Print arguments for debugging purposes (can be removed in production)
-    println!("Arguments: {:?}", args);
-
     // Check if the correct number of arguments is provided
     if args.len() < 2 {
         eprintln!("Usage: {} <path>", args[0]);
